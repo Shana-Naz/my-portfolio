@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 10%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 1500px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\About\1669211331171.jpg" alt="About Me">
+    <p>Hello! My name is Shana Nasrin, and I hold a Bachelor of Computer Application degree from the University of Calicut. After completing my formal education, I pursued various certifications in data analytics, which have significantly enriched my knowledge and skills in this dynamic field. My academic journey and subsequent certifications have equipped me with a strong foundation in computer applications, and specialized skills in data analysis. I am driven by a deep curiosity and a passion for uncovering meaningful insights from complex datasets. My educational background and certifications have provided me with the tools and techniques to approach data analysis with a comprehensive and methodical perspective.</p>
+    <p>I am passionate about data analysis and visualization, and I am eager to apply my skills in a professional setting. I thrive on the challenge of interpreting data and transforming it into actionable insights that can drive decision-making processes. My enthusiasm for this field is fueled by the ever-evolving nature of data science and the endless possibilities it offers for innovation and improvement. I am particularly keen on working with organizations that value data-driven strategies and are committed to leveraging the power of data to achieve their goals. I am dedicated to continuous learning and staying updated with the latest trends and technologies in data analytics, and I am excited about the opportunities to contribute to and grow within this industry.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Projects\hanson-lu-FT2WwbS1LJQ-unsplash.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Airline Passenger Satisfaction (Excel)</p>
+            <a href="https://medium.com/learning-data/data-analyst-portfolio-project-excel-0552d64d03d0" class="btn btn-primary">Blog Post</a>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Projects\roberto-nickson-so3wgJLwDxo-unsplash.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">New York City Airbnb Listings (SQL and Power BI)</p>
+            <a href="https://medium.com/@shana21619/new-york-city-airbnb-listings-0cd5520596a9" class="btn btn-primary">Blog Post</a>
+            <a href="https://github.com/Shana-Naz/Airbnb_listings" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Projects\viktor-avdeev-Gk3apXDUZiI-unsplash.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Uber Ride Analysis (Excel and Tableau)</p>
+            <a href="https://medium.com/datadriveninvestor/data-analyst-portfolio-project-excel-tableau-2ab098feefed" class="btn btn-primary">Blog Post</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Skills\excel-logo-0.png" class="card-img-top" alt="Microsoft Excel">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Excel</h5>
+            <p class="card-text">I am proficient in Microsoft Excel, with a strong command of advanced functions, pivot tables, and data visualization techniques. My expertise allows me to efficiently analyze and interpret large datasets, providing valuable insights and supporting data-driven decision-making.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Skills\3 (1).png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">I have a solid proficiency in SQL, enabling me to effectively query, manipulate, and manage relational databases. My skills in SQL allow me to extract and analyze complex datasets, ensuring accurate and insightful data reporting.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Skills\2 (1).png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">I am skilled in data visualization using Power BI and Tableau, enabling me to create interactive and insightful dashboards. My expertise in these tools allows me to transform complex data into clear and compelling visual stories, aiding in better decision-making.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Skills\R_(programming_language)-Logo.wine.png" class="card-img-top" alt="R Programming">
+          <div class="card-body">
+            <h5 class="card-title">R Programming</h5>
+            <p class="card-text">I am a beginner in R programming, currently developing my skills in statistical analysis and data visualization using this powerful language. As I continue to learn, I am eager to apply R in real-world data analysis projects to further enhance my capabilities.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <h2 class="text-center">Certifications</h2>
+            <div class="row">
+                <!-- Certification 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card certification-card">
+                        <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Certifications\Master-Data-Analytics-with-1.png" class="card-img-top" alt="Certification 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Data Analytics Professional Certification</h5>
+                            
+                            <a href="https://www.coursera.org/professional-certificates/google-data-analytics?" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card certification-card">
+                        <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Certifications\sql.png" class="card-img-top" alt="Certification 2">
+                        <div class="card-body">
+                            <h5 class="card-title">MySQL for Data Analytics and Business Intelligence</h5>
+                            
+                            <a href="https://www.udemy.com/course/sql-mysql-for-data-analytics-and-business-intelligence/?couponCode=JUST4U02223" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card certification-card">
+                        <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Certifications\power bi logol.png" class="card-img-top" alt="Certification 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft Power BI</h5>
+                            
+                            <a href="https://www.mindluster.com/certificate/402/Power-BI" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card certification-card">
+                        <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Certifications\stat.png" class="card-img-top" alt="Certification 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Statistics for Data Science and Business Analysis</h5>
+                            
+                            <a href="https://www.udemy.com/course/statistics-for-data-science-and-business-analysis/?couponCode=JUST4U02223" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 5 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card certification-card">
+                        <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Images\Certifications\sap.png" class="card-img-top" alt="Certification 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring SAP Analytics Cloud</h5>
+                            
+                            <a href="https://learning.sap.com/learning-journeys/exploring-sap-analytics-cloud" class="btn btn-primary">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="text-center">
+        <p><i class="fas fa-envelope"></i> shana.nasrin2601@gmail.com</p>
+      </div>
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/shana-nasrin-data-analyst/" target="_blank">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Icons\linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/Shana-Naz" target="_blank">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Icons\github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@shana21619" target="_blank">
+          <img src="C:\Users\shana\OneDrive\Desktop\Portfolio website\Icons\medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certifications">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
